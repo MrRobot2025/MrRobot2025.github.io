@@ -1,0 +1,110 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+#Hero-header
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(to right top, #5cdb95, #66e181, #78e567, #8ee948, #a8eb12);
+}
+#Hero-header h1,h2 
+{
+    color:#edf5e1;
+}
+
+#Hero-header h1
+{
+    font-weight: 500;
+    font-size: 5vw;
+}
+ 
+.down-arrow
+{
+    position: absolute;
+    bottom: 7vh;
+    right:4vw;
+    display: flex;
+    animation: drop-down 1s 0s alternate infinite ease-in-out;
+}
+
+.aboutme
+{
+    height: 100vh;
+    display: flex;
+    align-items: center;   
+}
+
+#container{
+    display: flex;
+    width: 80%;
+    margin: auto;
+}
+
+.skills
+{
+    height: 100vh;
+    background-color: #edf5e1;
+    background-image: linear-gradient(to top, #f8d196, #f1dca7, #ece6ba, #eaeece, #edf5e1);
+    display: flex;
+    align-items: center;
+}
+
+.tag
+{
+    color:black;
+    font-family: 'Allison', sans-serif;
+    font-size: 2.4rem;
+}
+
+.subtag{
+    margin: 0;
+    font-size: 1.6rem;
+    margin-left: 2rem;
+}
+
+.inside-tag{
+    margin:0; font-size: 1.2rem; font-family: 'Philosopher', sans-serif;;
+
+}
+
+@media (prefers-reduced-motion: no-preference)
+{
+
+    .square 
+    {
+      animation: fade s 4s ;
+    }
+
+}
+
+@keyframes drop-down
+{
+    0%
+    {
+        transform: translateY(10px);
+    }
+    100%
+    {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes fade
+{
+    0%
+    {
+        opacity: 0;
+    }
+    100%
+    {
+        opacity: 1;
+    }
+}
+
